@@ -17,7 +17,7 @@ public class App {
                 int number = 2;
                 byte[] tab = " ".getBytes();
                 fileOutputStream.write("1. ".getBytes());
-                for (int i = 0; i < bytes.length; i++) {
+                for (int i = 0; i < bytes.length - 1; i++) {
                     if (bytes[i] == tab[0]) {
                         fileOutputStream.write(("\n" + number + ". ").getBytes());
                         number++;
